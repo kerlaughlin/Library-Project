@@ -6,13 +6,9 @@ function findAccountById(accounts, id) {
 function sortAccountsByLastName(accounts) {
   //use sort to sort accounts by last name
   return accounts.sort((a, b) => {
-    if (a.name.last > b.name.last){
-        return 1
-        } else {
-        return -1
-        }
+    return (a.name.last > b.name.last ? 1 : -1);
   })
-}
+ }
                   
 function getTotalNumberOfBorrows(account, books) {
   const acctID = account.id;
